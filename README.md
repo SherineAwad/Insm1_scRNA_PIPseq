@@ -11,9 +11,6 @@
 - Zappia, L., Richter, S., Ramírez-Suástegui, C., Kfuri-Rubens, R., Vornholz, L., Wang, W., et al. (2025).  
   *Feature selection methods affect the performance of scRNA-seq data integration and querying.* **Nature Methods**, 1–11.
 
----
-
 #💡💡💡Thanh chose to proceed with this analysis using **Scanpy**.
 
 
-##
