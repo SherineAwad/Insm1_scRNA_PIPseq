@@ -11,7 +11,10 @@
 - Zappia, L., Richter, S., Ramírez-Suástegui, C., Kfuri-Rubens, R., Vornholz, L., Wang, W., et al. (2025).  
   *Feature selection methods affect the performance of scRNA-seq data integration and querying.* **Nature Methods**, 1–11.
 
-# 💡💡💡Thanh chose to proceed with this analysis using **Scanpy**.
+# 💡💡💡
+# Thanh chose to proceed with this analysis using **Scanpy**.
+# 💡💡💡
+
 
 ## Filtering: Same Neurog2 filtering as below
 
@@ -36,6 +39,13 @@ Basically:
 ### After filtering
 ![Violin plot after filtering](figures/violin_after_filtering.png?v=2)
 
+
+## Umap 
+
+We took the filtered AnnData object, normalized it with log-transformation, and stored the log-normalized counts in `adata.raw`. We then selected highly variable genes using the **Seurat v3 flavor**, which closely mimics Seurat’s method of mean-variance trend fitting with Loess regression, making it the closest approach in Scanpy to Seurat’s HVG selection. After that, we scaled the data, performed PCA, computed the neighborhood graph, and finally calculated UMAP embeddings for visualization.
+
+
+![UMAP](figures/umap_Insm1_analysed.png?v=3)
 
 
 

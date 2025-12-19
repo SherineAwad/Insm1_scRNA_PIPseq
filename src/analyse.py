@@ -6,8 +6,8 @@ import os
 # ------------------------
 # Parse command-line arguments
 # ------------------------
-parser = argparse.ArgumentParser(description='Preprocess scRNA-seq AnnData object and plot UMAP by sample.')
-parser.add_argument('--input', required=True, help='Input .h5ad file')
+parser = argparse.ArgumentParser(description='Preprocess filtered scRNA-seq AnnData object and plot UMAP.')
+parser.add_argument('--input', required=True, help='Input .h5ad file (already filtered)')
 parser.add_argument('--output', required=True, help='Output .h5ad file')
 args = parser.parse_args()
 
@@ -17,53 +17,31 @@ args = parser.parse_args()
 base_name = os.path.splitext(os.path.basename(args.output))[0]
 
 # ------------------------
-# Read AnnData
+# Read filtered AnnData
 # ------------------------
 adata = sc.read(args.input)
-print(f"Loaded AnnData: {adata.shape[0]} cells x {adata.shape[1]} genes")
-
-# ------------------------
-# QC metrics: mitochondrial genes
-# ------------------------
-if 'gene_symbols' in adata.var.columns:
-    gene_symbols_str = adata.var['gene_symbols'].astype(str)
-    mt_genes = gene_symbols_str.str.upper().str.startswith('MT-')
-    n_mt_genes = mt_genes.sum()
-    print(f"Detected {n_mt_genes} mitochondrial genes")
-    if n_mt_genes > 0:
-        print("MT genes examples:", gene_symbols_str.loc[mt_genes].tolist()[:10])
-else:
-    mt_genes = None
-    print("Warning: 'gene_symbols' not found in adata.var. Percent mito will not be calculated.")
-
-# Total counts and gene counts per cell
-if hasattr(adata.X, "A"):
-    adata.obs['n_counts'] = adata.X.sum(axis=1).A1
-    adata.obs['n_genes'] = (adata.X > 0).sum(axis=1).A1
-else:
-    adata.obs['n_counts'] = adata.X.sum(axis=1)
-    adata.obs['n_genes'] = (adata.X > 0).sum(axis=1)
-
-# Percent mitochondrial counts
-if mt_genes is not None and mt_genes.sum() > 0:
-    if hasattr(adata.X, "A"):
-        adata.obs['percent_mito'] = adata[:, mt_genes].X.sum(axis=1).A1 / adata.X.sum(axis=1).A1 * 100
-    else:
-        adata.obs['percent_mito'] = adata[:, mt_genes].X.sum(axis=1) / adata.X.sum(axis=1) * 100
-else:
-    adata.obs['percent_mito'] = 0.0
+print(f"Loaded filtered AnnData: {adata.shape[0]} cells x {adata.shape[1]} genes")
 
 # ------------------------
 # Normalize and log-transform
 # ------------------------
 sc.pp.normalize_total(adata, target_sum=1e4)
 sc.pp.log1p(adata)
-adata.raw = adata  # store raw counts
+adata.raw = adata 
 
 # ------------------------
 # Highly variable genes (HVG)
 # ------------------------
-sc.pp.highly_variable_genes(adata, flavor='seurat_v3', n_top_genes=2000)
+# Use seurat_v3 if available, otherwise fall back to seurat
+try:
+    import skmisc
+    flavor_used = 'seurat_v3'
+except ImportError:
+    flavor_used = 'seurat'
+    print("Warning: skmisc not installed, falling back to 'seurat' flavor for HVG selection")
+
+sc.pp.highly_variable_genes(adata, flavor=flavor_used, n_top_genes=2000)
+print(f"Using HVG flavor: {flavor_used}")
 print(f"Number of highly variable genes: {adata.var['highly_variable'].sum()}")
 
 # ------------------------
@@ -98,5 +76,5 @@ else:
 # Save processed AnnData
 # ------------------------
 adata.write(args.output)
-print(f"Preprocessed AnnData saved to {args.output}")
+print(f"Processed AnnData saved to {args.output}")
 
