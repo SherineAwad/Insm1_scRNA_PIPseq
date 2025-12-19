@@ -2,7 +2,7 @@ configfile: "config.yaml"
 
 rule all:
     input:
-        f"{config['output_prefix']}_analysed.h5ad"
+        f"{config['output_prefix']}_clustered.h5ad"
 
 rule read_matrices:
     input:
@@ -46,3 +46,16 @@ rule analyse:
             --output {output.h5ad}
         """
 
+rule cluster:
+    input: 
+       h5ad=f"{config['output_prefix']}_analysed.h5ad"
+    output: 
+       h5ad=f"{config['output_prefix']}_clustered.h5ad"
+    conda: 
+      "sknb.yaml"
+    params: 
+        resolution = config['resolution'] 
+    shell: 
+        """
+        python src/cluster.py --input {input} --output {output} --resolution {params} 
+        """  

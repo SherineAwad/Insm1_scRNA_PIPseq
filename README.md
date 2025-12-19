@@ -1,7 +1,9 @@
 # Analysing INSM1 Overexpression: scRNA-seq (PIP-seq) Data
 
 
-# Benchmark studies comparing Seurat and Scanpy
+# 🔬🔬 Benchmark studies of Seurat vs Scanpy: Shows Outputs Can Differ on the Same Input and Similar Parameters
+
+
 - Rich, J. M., Moses, L., Einarsson, P. H., Jackson, K., Luebbert, L., Booeshaghi, A. S., et al. (2024).  
   *The impact of package selection and versioning on single-cell RNA-seq analysis.* **bioRxiv**.
 
