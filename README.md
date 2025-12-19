@@ -30,11 +30,12 @@ Basically:
 - Exclude cells with **>25% mitochondrial reads**, as this indicates poor cell quality or stress.
 
 
-### Before filtering 
-[](figures/violin_before_filtering.png?v=2)
+### Before filtering
+![Violin plot before filtering](figures/violin_before_filtering.png?v=2)
+
+### After filtering
+![Violin plot after filtering](figures/violin_after_filtering.png?v=2)
 
 
-### After filtering 
-[](figures/violin_after_filtering.png?v=2)
 
 
