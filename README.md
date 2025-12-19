@@ -13,4 +13,28 @@
 
 # 💡💡💡Thanh chose to proceed with this analysis using **Scanpy**.
 
+## Filtering: Same Neurog2 filtering as below
+
+```python
+adata_filtered = adata[
+    (adata.obs['n_genes'] >= 800) & (adata.obs['n_genes'] <= 8000) &
+    (adata.obs['n_counts'] >= 1200) & (adata.obs['n_counts'] <= 30000) &
+    (adata.obs['percent_mito'] < 25)
+].copy()
+
+```
+Basically: 
+
+- Retain cells with **800–8,000 detected genes** to remove low-quality cells and potential doublets.
+- Keep cells with **1,200–30,000 total UMI counts** to exclude low-depth captures and overly complex libraries.
+- Exclude cells with **>25% mitochondrial reads**, as this indicates poor cell quality or stress.
+
+
+### Before filtering 
+[](figures/violin_before_filtering.png?v=2)
+
+
+### After filtering 
+[](figures/violin_after_filtering.png?v=2)
+
 
