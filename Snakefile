@@ -3,7 +3,7 @@ configfile: "config.yaml"
 rule all:
     input:
         f"{config['output_prefix']}_clustered.h5ad",
-        "figures/.plotMarkers.done",
+        "figures/umap_mInsm1_clustered_by_sample.png",
 
 rule read_matrices:
     input:
@@ -67,10 +67,9 @@ rule plotMarkers:
       params: 
         markers = config['MARKERS'] 
       output: 
-        done="figures/.plotMarkers.done" 
+       "figures/umap_mInsm1_clustered_by_sample.png"
       shell: 
           """
            python src/plotMarkers.py --input {input} --markers {params} 
-           touch {output.done}
           """ 
 

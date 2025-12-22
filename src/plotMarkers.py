@@ -20,6 +20,16 @@ args = parser.parse_args()
 adata = sc.read(args.input)
 print(f"Loaded AnnData: {adata.n_obs} cells x {adata.n_vars} genes")
 
+#plot umap split by sample
+sc.pl.umap(
+    adata,
+    color="sample",
+    size=2,
+    show=False,
+    save=f"_{os.path.splitext(os.path.basename(args.input))[0]}_by_sample.png"
+)
+
+
 # ------------------------
 # Make temporary adata for plotting with gene_symbols as var_names
 # ------------------------
