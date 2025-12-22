@@ -4,6 +4,7 @@ rule all:
     input:
         f"{config['output_prefix']}_clustered.h5ad",
         "figures/umap_mInsm1_clustered_by_sample.png",
+        f"{config['output_prefix']}_annotated.h5ad"
 
 rule read_matrices:
     input:
@@ -73,3 +74,15 @@ rule plotMarkers:
            python src/plotMarkers.py --input {input} --markers {params} 
           """ 
 
+
+rule annotate: 
+     input: 
+        h5ad=f"{config['output_prefix']}_clustered.h5ad"
+     params: 
+      annotations = config['ANNOTATIONS'] 
+     output: 
+       h5ad=f"{config['output_prefix']}_annotated.h5ad"
+     shell: 
+       """ 
+       python src/annotate.py --input {input} --output {output} --annotations {params}
+       """
