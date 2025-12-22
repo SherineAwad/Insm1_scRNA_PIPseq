@@ -88,7 +88,7 @@ Basically:
 
 ## Marker genes feature plots 
 
-<img src="figures/umap_mInsm1_clustered_by_sample.png?v=3" alt="by_sample" width="33%"><img src="figures/umap_mInsm1_clustered_Malat1.png?v=3" alt="Malat1" width="33%"><img src="figures/umap_mInsm1_clustered_Arr3.png?v=3" alt="Arr3" width="33%">
+<img src="figures/umap_mInsm1_clustered_Gli1.png?v=3" alt="Gli1" width="33%"><img src="figures/umap_mInsm1_clustered_Malat1.png?v=3" alt="Malat1" width="33%"><img src="figures/umap_mInsm1_clustered_Arr3.png?v=3" alt="Arr3" width="33%">
 <img src="figures/umap_mInsm1_clustered_Isl1.png?v=3" alt="Isl1" width="33%"><img src="figures/umap_mInsm1_clustered_Chat.png?v=3" alt="Chat" width="33%"><img src="figures/umap_mInsm1_clustered_Csf1r.png?v=3" alt="Csf1r" width="33%">
 <img src="figures/umap_mInsm1_clustered_Ptprc.png?v=3" alt="Ptprc" width="33%"><img src="figures/umap_mInsm1_clustered_Prdx6.png?v=3" alt="Prdx6" width="33%"><img src="figures/umap_mInsm1_clustered_Rlbp1.png?v=3" alt="Rlbp1" width="33%">
 <img src="figures/umap_mInsm1_clustered_Trpm1.png?v=3" alt="Trpm1" width="33%"><img src="figures/umap_mInsm1_clustered_Prdm1.png?v=3" alt="Prdm1" width="33%"><img src="figures/umap_mInsm1_clustered_Calb2.png?v=3" alt="Calb2" width="33%">
@@ -109,15 +109,14 @@ Basically:
 <img src="figures/umap_mInsm1_clustered_Ebf3.png?v=3" alt="Ebf3" width="33%"><img src="figures/umap_mInsm1_clustered_Foxn4.png?v=3" alt="Foxn4" width="33%"><img src="figures/umap_mInsm1_clustered_Apoe.png?v=3" alt="Apoe" width="33%">
 <img src="figures/umap_mInsm1_clustered_Vim.png?v=3" alt="Vim" width="33%"><img src="figures/umap_mInsm1_clustered_Bsn.png?v=3" alt="Bsn" width="33%"><img src="figures/umap_mInsm1_clustered_Insm1.png?v=3" alt="Insm1" width="33%">
 <img src="figures/umap_mInsm1_clustered_Nefl.png?v=3" alt="Nefl" width="33%"><img src="figures/umap_mInsm1_clustered_Pou4f2.png?v=3" alt="Pou4f2" width="33%"><img src="figures/umap_mInsm1_clustered_Sfrp2.png?v=3" alt="Sfrp2" width="33%">
-<img src="figures/umap_mInsm1_clustered_clusters.png?v=3" alt="clusters" width="33%"><img src="figures/umap_mInsm1_clustered_Notch1.png?v=3" alt="Notch1" width="33%"><img src="figures/umap_mInsm1_clustered_Rbfox3.png?v=3" alt="Rbfox3" width="33%">
+<img src="figures/umap_mInsm1_clustered_Emx1.png?v=3" alt="Emx1" width="33%"><img src="figures/umap_mInsm1_clustered_Notch1.png?v=3" alt="Notch1" width="33%"><img src="figures/umap_mInsm1_clustered_Rbfox3.png?v=3" alt="Rbfox3" width="33%">
 <img src="figures/umap_mInsm1_clustered_Pecam1.png?v=3" alt="Pecam1" width="33%"><img src="figures/umap_mInsm1_clustered_Pdgfra.png?v=3" alt="Pdgfra" width="33%"><img src="figures/umap_mInsm1_clustered_Pou4f3.png?v=3" alt="Pou4f3" width="33%">
 <img src="figures/umap_mInsm1_clustered_Acta2.png?v=3" alt="Acta2" width="33%"><img src="figures/umap_mInsm1_clustered_Lhx2.png?v=3" alt="Lhx2" width="33%"><img src="figures/umap_mInsm1_clustered_Igf2.png?v=3" alt="Igf2" width="33%">
 <img src="figures/umap_mInsm1_clustered_Elavl3.png?v=3" alt="Elavl3" width="33%"><img src="figures/umap_mInsm1_clustered_Bhlhe23.png?v=3" alt="Bhlhe23" width="33%"><img src="figures/umap_mInsm1_clustered_Ccr2.png?v=3" alt="Ccr2" width="33%">
 <img src="figures/umap_mInsm1_clustered_Vsx1.png?v=3" alt="Vsx1" width="33%"><img src="figures/umap_mInsm1_clustered_Aqp4.png?v=3" alt="Aqp4" width="33%"><img src="figures/umap_mInsm1_clustered_Slc6a9.png?v=3" alt="Slc6a9" width="33%">
 <img src="figures/umap_mInsm1_clustered_Elavl4.png?v=3" alt="Elavl4" width="33%"><img src="figures/umap_mInsm1_clustered_Atoh7.png?v=3" alt="Atoh7" width="33%"><img src="figures/umap_mInsm1_clustered_Calb1.png?v=3" alt="Calb1" width="33%">
 <img src="figures/umap_mInsm1_clustered_Fgf15.png?v=3" alt="Fgf15" width="33%"><img src="figures/umap_mInsm1_clustered_Glul.png?v=3" alt="Glul" width="33%"><img src="figures/umap_mInsm1_clustered_Pcp4.png?v=3" alt="Pcp4" width="33%">
-<img src="figures/umap_mInsm1_clustered_clustersON.png?v=3" alt="clustersON" width="33%"><img src="figures/umap_mInsm1_clustered_Gad1.png?v=3" alt="Gad1" width="33%"><img src="figures/umap_mInsm1_clustered_Emx1.png?v=3" alt="Emx1" width="33%">
-<img src="figures/umap_mInsm1_clustered_Gli1.png?v=3" alt="Gli1" width="33%">
+<img src="figures/umap_mInsm1_clustered_Gad1.png?v=3" alt="Gad1" width="33%">
 
 
 
