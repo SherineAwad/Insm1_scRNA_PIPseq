@@ -13,7 +13,8 @@
 | | | \ \ / / _ \ '__/ _ \ \/ / '_ \| '__/ _ \/ __/ __| |/ _ \| '_ \ 
 | |_| |\ V /  __/ | |  __/>  <| |_) | | |  __/\__ \__ \ | (_) | | | |
  \___/  \_/ \___|_|  \___/_/\_\ .__/|_|  \___||___/___/_|\___/|_| |_|
-                              |_|                                    
+                              |_|                                   
+
 ```
 
 # 🔬🔬 Benchmark studies of Seurat vs Scanpy: Shows Outputs Can Differ on the Same Input and Similar Parameters
@@ -30,6 +31,7 @@
 
 # 💡💡💡
 # Thanh chose to proceed with this analysis using **Scanpy**.
+# Rerunning the analysis using the modified genome: old results can still be restored from github 
 # 💡💡💡
 
 
@@ -49,12 +51,6 @@ Basically:
 - Keep cells with **1,200–30,000 total UMI counts** to exclude low-depth captures and overly complex libraries.
 - Exclude cells with **>25% mitochondrial reads**, as this indicates poor cell quality or stress.
 
-
-### Before filtering
-![Violin plot before filtering](ofigures/violin_before_filtering.png?v=2)
-
-### After filtering
-![Violin plot after filtering](ofigures/violin_after_filtering.png?v=2)
 
 
 ## ## UMAP (Generated with the Parameters Below — Tweaking May Change Results)
@@ -81,8 +77,6 @@ Basically:
 
 *Note: Tweaking any of these parameters may produce slightly different UMAP embeddings — this is expected and does not indicate errors.*
 
-
-# Rerunning the analysis using the modified genome 
 
 ### Before filtering
 ![Violin plot before filtering](figures/violin_before_filtering.png?v=2)
