@@ -131,8 +131,8 @@ Basically:
 <img src="figures/umap_mInsm1_clustered_Vsx1.png?v=3" alt="Vsx1" width="33%"><img src="figures/umap_mInsm1_clustered_Aqp4.png?v=3" alt="Aqp4" width="33%"><img src="figures/umap_mInsm1_clustered_Slc6a9.png?v=3" alt="Slc6a9" width="33%">
 <img src="figures/umap_mInsm1_clustered_Elavl4.png?v=3" alt="Elavl4" width="33%"><img src="figures/umap_mInsm1_clustered_Atoh7.png?v=3" alt="Atoh7" width="33%"><img src="figures/umap_mInsm1_clustered_Calb1.png?v=3" alt="Calb1" width="33%">
 <img src="figures/umap_mInsm1_clustered_Fgf15.png?v=3" alt="Fgf15" width="33%"><img src="figures/umap_mInsm1_clustered_Glul.png?v=3" alt="Glul" width="33%"><img src="figures/umap_mInsm1_clustered_Pcp4.png?v=3" alt="Pcp4" width="33%">
-<img src="figures/umap_mInsm1_clustered_Gad1.png?v=3" alt="Gad1" width="33%"><img src="figures/umap_mInsm1_clustered_Top2a.png?v=3" alt="Top2a" width="33%"><img src="figures/umap_mInsm1_clustered_Pcna.png?v=3"  alt=Pcna" width="33%">
-<img src="figures/umap_mInsm1_clustered_Pecam1.png?v=3" alt=Pecam1" width="33%">
+<img src="figures/umap_mInsm1_clustered_Gad1.png?v=3" alt="Gad1" width="33%"><img src="figures/umap_mInsm1_clustered_Top2a.png?v=3" alt="Top2a" width="33%"><img src="figures/umap_mInsm1_clustered_Pcna.png?v=3"  alt="Pcna" width="33%">
+<img src="figures/umap_mInsm1_clustered_Pecam1.png?v=3" alt="Pecam1" width="33%">
 
 ## Annotations 
 
