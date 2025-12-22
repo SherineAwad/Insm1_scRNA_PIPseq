@@ -80,11 +80,6 @@ Basically:
 
 ![UMAP](figures/umap_mInsm1_analysed.png?v=3)
 
-
-### UMAP split by sample 
-
-![UMAP split by sample](figures/umap_mInsm1_clustered_by_sample.png?v=2)
-
 ## Clustering 
 
 ![CLUSTERS](figures/umap_mInsm1_clustered_clusters.png?v=2)
