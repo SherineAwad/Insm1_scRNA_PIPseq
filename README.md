@@ -84,6 +84,7 @@ Basically:
 
 ![CLUSTERS](figures/umap_mInsm1_clustered_clusters.png?v=2)
 
+![CLUSTERS ON](figures/umap_mInsm1_clustered_clustersON.png?v=3)
 
 ## Marker genes feature plots 
 

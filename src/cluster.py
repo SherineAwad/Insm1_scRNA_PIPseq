@@ -35,6 +35,17 @@ sc.pl.umap(
     save=f"_{os.path.splitext(os.path.basename(args.output))[0]}_clusters.png"
 )
 
+
+sc.pl.umap(
+    adata,
+    color="leiden",
+    size=2,
+    legend_loc="on data",
+    show=False,
+    save=f"_{os.path.splitext(os.path.basename(args.output))[0]}_clustersON.png"
+)
+
+
 # ------------------------
 # Save
 # ------------------------
