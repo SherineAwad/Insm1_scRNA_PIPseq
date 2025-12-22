@@ -4,67 +4,40 @@ import argparse
 import os
 
 # ------------------------
-# Argument parser
+# Arguments
 # ------------------------
-parser = argparse.ArgumentParser(description="Clustering for scRNA PIP-seq")
-parser.add_argument('--input', required=True, help='Input h5ad file (filtered & normalized)')
-parser.add_argument('--output', required=True, help='Output h5ad file with clustering results')
-parser.add_argument('--resolution', type=float, default=0.5, help='Leiden clustering resolution')
+parser = argparse.ArgumentParser(description="Leiden clustering only")
+parser.add_argument("--input", required=True, help="Analysed .h5ad file")
+parser.add_argument("--output", required=True, help="Clustered .h5ad file")
+parser.add_argument("--resolution", type=float, default=1.0, help="Leiden resolution")
 args = parser.parse_args()
-
-# ------------------------
-# Base name for saving plots
-# ------------------------
-base_name = os.path.splitext(os.path.basename(args.output))[0]
 
 # ------------------------
 # Load AnnData
 # ------------------------
 adata = sc.read(args.input)
-print(f"Loaded AnnData: {adata.shape[0]} cells x {adata.shape[1]} genes")
+print(f"Loaded AnnData: {adata.n_obs} cells x {adata.n_vars} genes")
 
 # ------------------------
-# Check PCA
-# ------------------------
-if 'X_pca' not in adata.obsm.keys():
-    sc.pp.pca(adata, svd_solver='arpack')
-    print("PCA computed.")
-else:
-    print("PCA already exists, skipping PCA computation.")
-
-# ------------------------
-# Check neighbors graph
-# ------------------------
-if 'neighbors' not in adata.uns.keys():
-    sc.pp.neighbors(adata)
-    print("Neighborhood graph computed.")
-else:
-    print("Neighbors graph already exists, skipping computation.")
-
-# ------------------------
-# Leiden clustering
+# Leiden clustering ONLY
 # ------------------------
 sc.tl.leiden(adata, resolution=args.resolution)
-print(f"Leiden clustering done. Number of clusters: {adata.obs['leiden'].nunique()}")
+print(f"Clusters found: {adata.obs['leiden'].nunique()}")
 
 # ------------------------
-# UMAP embedding
+# UMAP (reuse existing embedding)
 # ------------------------
-if 'X_umap' not in adata.obsm.keys():
-    sc.tl.umap(adata)
-    print("UMAP embedding computed.")
-else:
-    print("UMAP already exists, skipping computation.")
+sc.pl.umap(
+    adata,
+    color="leiden",
+    size=2,
+    show=False,
+    save=f"_{os.path.splitext(os.path.basename(args.output))[0]}_clusters.png"
+)
 
 # ------------------------
-# Plot UMAP colored by clusters
-# ------------------------
-sc.pl.umap(adata, color='leiden', size=2, save=f"_{base_name}_clusters.png", show=False)
-print(f"UMAP plot of clusters saved as {base_name}_clusters.png")
-
-# ------------------------
-# Save clustered AnnData
+# Save
 # ------------------------
 adata.write(args.output)
-print(f"Clustered AnnData saved to {args.output}")
+print(f"Saved clustered AnnData to {args.output}")
 

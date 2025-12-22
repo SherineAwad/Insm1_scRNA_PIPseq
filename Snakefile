@@ -2,7 +2,8 @@ configfile: "config.yaml"
 
 rule all:
     input:
-        f"{config['output_prefix']}_clustered.h5ad"
+        f"{config['output_prefix']}_clustered.h5ad",
+        "figures/.plotMarkers.done",
 
 rule read_matrices:
     input:
@@ -58,4 +59,18 @@ rule cluster:
     shell: 
         """
         python src/cluster.py --input {input} --output {output} --resolution {params} 
-        """  
+        """ 
+
+rule plotMarkers: 
+      input: 
+         h5ad=f"{config['output_prefix']}_clustered.h5ad"
+      params: 
+        markers = config['MARKERS'] 
+      output: 
+        done="figures/.plotMarkers.done" 
+      shell: 
+          """
+           python src/plotMarkers.py --input {input} --markers {params} 
+           touch {output.done}
+          """ 
+
