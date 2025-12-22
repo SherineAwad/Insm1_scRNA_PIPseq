@@ -89,7 +89,7 @@ Basically:
 
 <img src="figures/umap_mInsm1_clustered_Prdx6.png?v=2" alt="Prdx6" width="33%"><img src="figures/umap_mInsm1_clustered_Sox9.png?v=2" alt="Sox9" width="33%"><img src="figures/umap_mInsm1_clustered_Rho.png?v=2" alt="Rho" width="33%">
 <img src="figures/umap_mInsm1_clustered_Pax6.png?v=2" alt="Pax6" width="33%"><img src="figures/umap_mInsm1_clustered_Slc17a7.png?v=2" alt="Slc17a7" width="33%"><img src="figures/umap_mInsm1_clustered_Slc1a3.png?v=2" alt="Slc1a3" width="33%">
-<img src="figures/umap_mInsm1_clustered_Apoe.png?v=2" alt="Apoe" width="33%"><img src="figures/umap_mInsm1_clustered_clusters.png?v=2" alt="clusters" width="33%"><img src="figures/umap_mInsm1_clustered_Lhx2.png?v=2" alt="Lhx2" width="33%">
+<img src="figures/umap_mInsm1_clustered_Apoe.png?v=2" alt="Apoe" width="33%"><img src="figures/umap_mInsm1_clustered_Acta2.png?v=2" alt="Acta2" width="33%"><img src="figures/umap_mInsm1_clustered_Lhx2.png?v=2" alt="Lhx2" width="33%">
 <img src="figures/umap_mInsm1_clustered_Aqp4.png?v=2" alt="Aqp4" width="33%"><img src="figures/umap_mInsm1_clustered_Glul.png?v=2" alt="Glul" width="33%"><img src="figures/umap_mInsm1_clustered_Malat1.png?v=2" alt="Malat1" width="33%">
 <img src="figures/umap_mInsm1_clustered_Rlbp1.png?v=2" alt="Rlbp1" width="33%"><img src="figures/umap_mInsm1_clustered_mt-Atp6.png?v=2" alt="mt-Atp6" width="33%"><img src="figures/umap_mInsm1_clustered_Otx2.png?v=2" alt="Otx2" width="33%">
 <img src="figures/umap_mInsm1_clustered_Abca8a.png?v=2" alt="Abca8a" width="33%"><img src="figures/umap_mInsm1_clustered_Nrl.png?v=2" alt="Nrl" width="33%"><img src="figures/umap_mInsm1_clustered_Vim.png?v=2" alt="Vim" width="33%">
@@ -105,7 +105,8 @@ Basically:
 <img src="figures/umap_mInsm1_clustered_Emx1.png?v=2" alt="Emx1" width="33%"><img src="figures/umap_mInsm1_clustered_Csf1r.png?v=2" alt="Csf1r" width="33%"><img src="figures/umap_mInsm1_clustered_Pax2.png?v=2" alt="Pax2" width="33%">
 <img src="figures/umap_mInsm1_clustered_Tfap2a.png?v=2" alt="Tfap2a" width="33%"><img src="figures/umap_mInsm1_clustered_Kcnj8.png?v=2" alt="Kcnj8" width="33%"><img src="figures/umap_mInsm1_clustered_Pou4f2.png?v=2" alt="Pou4f2" width="33%">
 <img src="figures/umap_mInsm1_clustered_Rpe65.png?v=2" alt="Rpe65" width="33%"><img src="figures/umap_mInsm1_clustered_Lhx1.png?v=2" alt="Lhx1" width="33%"><img src="figures/umap_mInsm1_clustered_Tie1.png?v=2" alt="Tie1" width="33%">
-<img src="figures/umap_mInsm1_clustered_Foxn4.png?v=2" alt="Foxn4" width="33%"><img src="figures/umap_mInsm1_clustered_Acta2.png?v=2" alt="Acta2" width="33%">
+<img src="figures/umap_mInsm1_clustered_Foxn4.png?v=2" alt="Foxn4" width="33%">
+
 
 
 
