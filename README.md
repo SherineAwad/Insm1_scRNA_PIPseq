@@ -134,3 +134,26 @@ Basically:
 
 ![Annotations ON](figures/umap_mInsm1_annotated_annotationsON.png?v=3)
 
+
+## Remove non retina cells and reCluster 
+
+
+### We removed: 
+  
+  - RPE 
+  - Astrocytes
+  - Microglia 
+  - Endothelia 
+
+Then we reClustered 
+
+### reClustering UMAP 
+
+![reClustered](figures/umap_mInsm1_reClustered_UMAP_recluster.png?v=3)
+
+
+### reClustered UMAP QC violin plot 
+
+![QC](figures/violin_mInsm1_reClustered_QC_violin_by_cluster.png?v=3)
+
+ 
