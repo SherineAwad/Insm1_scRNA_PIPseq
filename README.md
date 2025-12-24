@@ -151,6 +151,10 @@ Then we reClustered
 
 ![reClustered](figures/umap_mInsm1_reClustered_UMAP_recluster.png?v=3)
 
+### reClustered UMAP split by sample 
+
+![reClustered by sample](figures/umap_mInsm1_reClustered_by_sample.png?v=3)
+
 
 ### reClustered UMAP QC violin plot 
 
