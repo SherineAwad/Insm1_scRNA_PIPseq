@@ -130,10 +130,7 @@ Basically:
 
 ## Annotations 
 
-![Annotations](figures/umap_mInsm1_annotated_annotations.png?v=2)
+![Annotations](figures/umap_mInsm1_annotated_annotations.png?v=3)
 
-![Annotations ON](figures/umap_mInsm1_annotated_annotationsON.png?v=2)
-
-
-
+![Annotations ON](figures/umap_mInsm1_annotated_annotationsON.png?v=3)
 
