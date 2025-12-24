@@ -135,7 +135,7 @@ Basically:
 ![Annotations ON](figures/umap_mInsm1_annotated_annotationsON.png?v=3)
 
 
-## Remove non retina cells and reCluster 
+## Remove non retinal neurons and reCluster 
 
 
 ### We removed: 
