@@ -208,6 +208,9 @@ i
 ![doublet_threshold 0.8](figures/0.8threshold_test.png?v=1)
 
 
+### UMAP for clusters using doublet threshold 0.8
+
+![doublet_threshold 0.8 UMAP](figures/umapdoubletsRemoved_0.8._0.5_clusters.png?v=1)
 
 ### Using threshold 0.9
 
