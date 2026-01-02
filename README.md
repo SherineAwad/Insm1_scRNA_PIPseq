@@ -214,6 +214,41 @@ i
 
 ### Using threshold 0.9
 
+### Marker genes UMAP using doublet threshold 0.8 
+
+<img src="figures/umapdoubletRemoved_0.8._0.5_Rho.png" alt="Rho" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Thy1.png" alt="Thy1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Opn1mw.png" alt="Opn1mw" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Calb2.png" alt="Calb2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Pou4f3.png" alt="Pou4f3" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_EGFP.png" alt="EGFP" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Nrl.png" alt="Nrl" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Rbfox3.png" alt="Rbfox3" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Chat.png" alt="Chat" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Ebf3.png" alt="Ebf3" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Prdx6.png" alt="Prdx6" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Vim.png" alt="Vim" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Elavl3.png" alt="Elavl3" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sall3.png" alt="Sall3" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Cbln4.png" alt="Cbln4" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Pax6.png" alt="Pax6" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Abca8a.png" alt="Abca8a" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Neurod2.png" alt="Neurod2" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Slc18a3.png" alt="Slc18a3" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Kcnj8.png" alt="Kcnj8" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Prox1.png" alt="Prox1" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Notch1.png" alt="Notch1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Elavl4.png" alt="Elavl4" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sebox.png" alt="Sebox" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Nefm.png" alt="Nefm" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sox9.png" alt="Sox9" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Otx2.png" alt="Otx2" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Isl1.png" alt="Isl1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Olig2.png" alt="Olig2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Gli1.png" alt="Gli1" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Slc1a3.png" alt="Slc1a3" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Igf2.png" alt="Igf2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Ascl1.png" alt="Ascl1" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Pdgfra.png" alt="Pdgfra" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Vsx1.png" alt="Vsx1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Apoe.png" alt="Apoe" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Neurod4.png" alt="Neurod4" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Prdm1.png" alt="Prdm1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sncg.png" alt="Sncg" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Cdk1.png" alt="Cdk1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Pcna.png" alt="Pcna" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Hes1.png" alt="Hes1" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Gfap.png" alt="Gfap" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Calb1.png" alt="Calb1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Ptprc.png" alt="Ptprc" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Malat1.png" alt="Malat1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Pcp4.png" alt="Pcp4" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Gad2.png" alt="Gad2" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Emx1.png" alt="Emx1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Isl2.png" alt="Isl2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Glul.png" alt="Glul" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Arr3.png" alt="Arr3" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Rbpms.png" alt="Rbpms" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Nefl.png" alt="Nefl" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Top2a.png" alt="Top2a" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_mt-Atp6.png" alt="mt-Atp6" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Slc6a9.png" alt="Slc6a9" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Grm6.png" alt="Grm6" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Tfap2a.png" alt="Tfap2a" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Pou4f1.png" alt="Pou4f1" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Rlbp1.png" alt="Rlbp1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Trpm1.png" alt="Trpm1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Cx3cr1.png" alt="Cx3cr1" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Pax2.png" alt="Pax2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Mki67.png" alt="Mki67" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Hes6.png" alt="Hes6" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Gnat2.png" alt="Gnat2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Insm1.png" alt="Insm1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Csf1r.png" alt="Csf1r" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Foxn4.png" alt="Foxn4" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Lhx2.png" alt="Lhx2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Hes5.png" alt="Hes5" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Pecam1.png" alt="Pecam1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Pou4f2.png" alt="Pou4f2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sall1.png" alt="Sall1" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Aqp4.png" alt="Aqp4" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Lhx4.png" alt="Lhx4" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Bhlhe23.png" alt="Bhlhe23" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Onecut1.png" alt="Onecut1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Tie1.png" alt="Tie1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Slc17a7.png" alt="Slc17a7" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Prkca.png" alt="Prkca" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Atoh7.png" alt="Atoh7" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Rpe65.png" alt="Rpe65" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Acta2.png" alt="Acta2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Neurod1.png" alt="Neurod1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Neurog2.png" alt="Neurog2" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Gad1.png" alt="Gad1" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Ptf1a.png" alt="Ptf1a" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Lhx1.png" alt="Lhx1" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Opn1sw.png" alt="Opn1sw" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Cabp5.png" alt="Cabp5" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Onecut2.png" alt="Onecut2" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Fgf15.png" alt="Fgf15" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sfrp2.png" alt="Sfrp2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sox2.png" alt="Sox2" width="33%">
+<img src="figures/umapdoubletRemoved_0.8._0.5_Bsn.png" alt="Bsn" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sox11.png" alt="Sox11" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Ccr2.png" alt="Ccr2" width="33%">
 
 
 ![doublet_threshold 0.9](figures/0.9threshold_test.png?v=1) 
