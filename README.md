@@ -212,7 +212,6 @@ i
 
 ![doublet_threshold 0.8 UMAP](figures/umapdoubletsRemoved_0.8._0.5_clusters.png?v=1)
 
-### Using threshold 0.9
 
 ### Marker genes UMAP using doublet threshold 0.8 
 
@@ -250,5 +249,6 @@ i
 <img src="figures/umapdoubletRemoved_0.8._0.5_Fgf15.png" alt="Fgf15" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sfrp2.png" alt="Sfrp2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sox2.png" alt="Sox2" width="33%">
 <img src="figures/umapdoubletRemoved_0.8._0.5_Bsn.png" alt="Bsn" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sox11.png" alt="Sox11" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Ccr2.png" alt="Ccr2" width="33%">
 
+### Using threshold 0.9
 
 ![doublet_threshold 0.9](figures/0.9threshold_test.png?v=1) 
