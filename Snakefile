@@ -4,7 +4,10 @@ rule all:
     input:
         f"{config['output_prefix']}_clustered.h5ad",
         "figures/umap_mInsm1_clustered_by_sample.png",
-        f"{config['output_prefix']}_annotated.h5ad"
+        f"{config['output_prefix']}_annotated.h5ad",
+        f"{config['output_prefix']}_reClustered.h5ad",
+        "figures/umap_mInsm1_reClustered_by_sample.png",
+        f"{config['output_prefix']}_doubletDetected{config['THRESHOLD']}.h5ad"
 
 rule read_matrices:
     input:
@@ -86,3 +89,40 @@ rule annotate:
        """ 
        python src/annotate.py --input {input} --output {output} --annotations {params}
        """
+
+
+rule reCluster: 
+    input: 
+      f"{config['output_prefix']}_annotated.h5ad"
+    output: 
+      f"{config['output_prefix']}_reClustered.h5ad"
+    shell: 
+       """
+       python src/reCluster.py --input {input} --output {output}  
+       """
+
+rule rePlot: 
+    input: 
+       f"{config['output_prefix']}_reClustered.h5ad"
+    output: 
+       "figures/umap_mInsm1_reClustered_by_sample.png"
+    params: 
+       markers = config['MARKERS']
+    shell: 
+       """ 
+       python src/plotMarkers.py --input {input} --markers {params} 
+       """ 
+
+
+rule detectDoublets:
+    input:
+        h5ad=f"{config['output_prefix']}_clustered.h5ad"
+    params:
+        threshold=config['THRESHOLD']  # this goes to the shell command
+    output:
+        f"{config['output_prefix']}_doubletDetected{config['THRESHOLD']}.h5ad"  # output must be static
+    shell:
+        """
+        python src/detectDoublets.py --input {input.h5ad} --output {output} --threshold {params.threshold}
+        """
+ 
