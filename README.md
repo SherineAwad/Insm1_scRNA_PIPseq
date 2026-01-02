@@ -199,3 +199,18 @@ Then we reClustered
 <img src="figures/umap_mInsm1_reClustered_Neurod2.png?v=3" alt="Neurod2" width="33%"><img src="figures/umap_mInsm1_reClustered_Pou4f1.png?v=3" alt="Pou4f1" width="33%"><img src="figures/umap_mInsm1_reClustered_Sfrp2.png?v=3" alt="Sfrp2" width="33%">
 i
 
+
+# Going back a step to remove doublets from original clustered object
+
+
+### Using threshold 0.8 
+
+![doublet_threshold 0.8](figures/0.8threshold_test.png?v=1)
+
+
+
+### Using threshold 0.9
+
+
+
+![doublet_threshold 0.9](figures/0.9threshold_test.png?v=1) 

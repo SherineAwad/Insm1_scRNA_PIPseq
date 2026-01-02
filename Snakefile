@@ -7,7 +7,8 @@ rule all:
         f"{config['output_prefix']}_annotated.h5ad",
         f"{config['output_prefix']}_reClustered.h5ad",
         "figures/umap_mInsm1_reClustered_by_sample.png",
-        f"{config['output_prefix']}_doubletDetected{config['THRESHOLD']}.h5ad"
+        f"{config['output_prefix']}_doubletDetected{config['DOUBLET_THRESHOLD']}.h5ad",
+        f"{config['output_prefix']}_doubletRemoved{config['DOUBLET_THRESHOLD']}_{config['DOUBLET_SCORE']}.h5ad"
 
 rule read_matrices:
     input:
@@ -118,11 +119,22 @@ rule detectDoublets:
     input:
         h5ad=f"{config['output_prefix']}_clustered.h5ad"
     params:
-        threshold=config['THRESHOLD']  # this goes to the shell command
+        threshold=config['DOUBLET_THRESHOLD']  # this goes to the shell command
     output:
-        f"{config['output_prefix']}_doubletDetected{config['THRESHOLD']}.h5ad"  # output must be static
+        f"{config['output_prefix']}_doubletDetected{config['DOUBLET_THRESHOLD']}.h5ad"  # output must be static
     shell:
         """
         python src/detectDoublets.py --input {input.h5ad} --output {output} --threshold {params.threshold}
         """
- 
+
+rule removeDoublets: 
+     input: 
+         f"{config['output_prefix']}_doubletDetected{config['DOUBLET_THRESHOLD']}.h5ad"
+     output: 
+        f"{config['output_prefix']}_doubletRemoved{config['DOUBLET_THRESHOLD']}_{config['DOUBLET_SCORE']}.h5ad" 
+     params: 
+        score=config['DOUBLET_SCORE']
+     shell: 
+        """
+          python src/removeDoublets.py --input {input} --output {output} --markers markers.txt --threshold {params.score} 
+        """
