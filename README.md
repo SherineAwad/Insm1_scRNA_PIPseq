@@ -233,12 +233,10 @@ Then we reClustered
 |-----------|----------------------|----------|--------------|----------|--------------|
 | 0.7       | 57,607               | 53,918   | 93.6%        | 3,689    | 6.4%         |
 | 0.8       | 57,607               | 54,114   | 93.9%        | 3,493    | 6.1%         |
+| 0.9       | 57,611               | 54,697   | 94.9%        | 2,914    | 5.1%         |
 
 
-<img src="figures/mInsm1_doubletDetected0.7_doublets_umap.png?v=1" alt="P7" width ="33%"> <img src="figures/mInsm1_doubletDetected0.8_doublets_umap.png?v=1" alt="P8" width ="33%"> 
-
-
-
+<img src="figures/mInsm1_doubletDetected0.7_doublets_umap.png?v=1" alt="P7" width ="33%"> <img src="figures/mInsm1_doubletDetected0.8_doublets_umap.png?v=1" alt="P8" width ="33%"> <img src="figures/mInsm1_doubletDetected0.9_doublets_umap.png?v=1" alt="P9" width ="33%">
 # If we continue with 0.8? 
 
 
