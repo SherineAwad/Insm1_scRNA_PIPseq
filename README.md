@@ -197,13 +197,33 @@ Then we reClustered
 <img src="figures/umap_mInsm1_reClustered_Neurod1.png?v=3" alt="Neurod1" width="33%"><img src="figures/umap_mInsm1_reClustered_Pecam1.png?v=3" alt="Pecam1" width="33%"><img src="figures/umap_mInsm1_reClustered_Sebox.png?v=3" alt="Sebox" width="33%">
 <img src="figures/umap_mInsm1_reClustered_Vsx1.png?v=3" alt="Vsx1" width="33%"><img src="figures/umap_mInsm1_reClustered_Chat.png?v=3" alt="Chat" width="33%"><img src="figures/umap_mInsm1_reClustered_Hes1.png?v=3" alt="Hes1" width="33%">
 <img src="figures/umap_mInsm1_reClustered_Neurod2.png?v=3" alt="Neurod2" width="33%"><img src="figures/umap_mInsm1_reClustered_Pou4f1.png?v=3" alt="Pou4f1" width="33%"><img src="figures/umap_mInsm1_reClustered_Sfrp2.png?v=3" alt="Sfrp2" width="33%">
-i
+
 
 
 # Going back a step to remove doublets from original clustered object
 
 
-### Using threshold 0.8 
+### DoubletDetection threshold plot explanation
+
+- **Y-axis (Voting threshold)**  
+  Fraction of classifier runs that must label a cell as a doublet.  
+  Higher values = stricter, fewer cells called doublets.  
+  Example: **0.8** means a cell must be called a doublet in ≥80% of runs.
+
+- **X-axis (log10 p-value cutoff)**  
+  Statistical stringency within each run.  
+  More negative values = more stringent (fewer doublets).  
+  Less negative values = more permissive (more doublets).
+
+- **Color scale**  
+  Number of cells predicted as doublets for each parameter combination.
+
+- **Interpretation of 0.8 cutoff**  
+  Selecting **0.8** yields a conservative and stable set of doublets  
+  (≈ ~2,000–2,500 cells), avoiding over-filtering seen at lower thresholds.
+
+
+#### Using threshold 0.8 
 
 ![doublet_threshold 0.8](figures/0.8threshold_test.png?v=1)
 
@@ -249,6 +269,4 @@ i
 <img src="figures/umapdoubletRemoved_0.8._0.5_Fgf15.png" alt="Fgf15" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sfrp2.png" alt="Sfrp2" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sox2.png" alt="Sox2" width="33%">
 <img src="figures/umapdoubletRemoved_0.8._0.5_Bsn.png" alt="Bsn" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Sox11.png" alt="Sox11" width="33%"><img src="figures/umapdoubletRemoved_0.8._0.5_Ccr2.png" alt="Ccr2" width="33%">
 
-### Using threshold 0.9
 
-![doublet_threshold 0.9](figures/0.9threshold_test.png?v=1) 
