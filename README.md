@@ -223,9 +223,23 @@ Then we reClustered
   (≈ ~2,000–2,500 cells), avoiding over-filtering seen at lower thresholds.
 
 
-#### Using threshold 0.8 
-
 ![doublet_threshold 0.8](figures/0.8threshold_test.png?v=1)
+
+
+
+### Trying different doublets thresholds 
+
+| Threshold | Total Classified Cells | Singlets | Singlets (%) | Doublets | Doublets (%) |
+|-----------|----------------------|----------|--------------|----------|--------------|
+| 0.7       | 57,607               | 53,918   | 93.6%        | 3,689    | 6.4%         |
+| 0.8       | 57,607               | 54,114   | 93.9%        | 3,493    | 6.1%         |
+
+
+<img src="figures/mInsm1_doubletDetected0.7_doublets_umap.png?v=1" alt="P7" width ="33%"> <img src="figures/mInsm1_doubletDetected0.8_doublets_umap.png?v=1" alt="P8" width ="33%"> 
+
+
+
+# If we continue with 0.8? 
 
 
 ### UMAP for clusters using doublet threshold 0.8
