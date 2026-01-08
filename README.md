@@ -222,14 +222,28 @@ Basically:
 ![Annotations doubelt removed 0.8](figures/umap_mInsm1_annotated_annotationsON.png?v=1)
 ![Annotations doubelt removed 0.8](figures/umap_mInsm1_annotated_annotations.png?v=1)
 
-### Remove non retinal neurons and reCluster
+### Remove non retinal neurons 
 We removed:
 - RPE
 - Astrocytes
 - Microglia
-- Endothelia
+- Endothelial
 
 
-Then we reClustered
+### Umap after removal of non retinal neurons 
+
+![Removed clusters](figures/umap_mInsm1_annotated_removedClusters_UMAP.png?v=1)
+
+### Then we reClustered
+
+![reClustered](figures/umap_mInsm1_reClustered_UMAP_recluster.png?v=1) 
+
+
+
+### Checking QC 
+
+![QC](figures/violin_mInsm1_reClustered_QC_violin_by_cluster.png?v=1)
+
+
 
 

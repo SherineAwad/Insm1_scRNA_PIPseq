@@ -11,6 +11,7 @@ def main():
     args = parser.parse_args()
 
     out_base = os.path.splitext(os.path.basename(args.output))[0]
+    input_base = os.path.splitext(os.path.basename(args.input))[0]
 
     # ----------------------------
     # Load
@@ -32,6 +33,25 @@ def main():
     print(adata.obs["annotation"].value_counts())
 
     # ----------------------------
+    # UMAP after removing clusters (before reclustering)
+    # Use the original UMAP coordinates
+    # ----------------------------
+    removed_umap_file = f"_{input_base}_removedClusters_UMAP.png"
+    sc.pl.umap(
+        adata,
+        color="annotation",
+        legend_loc="on data",
+        title="After Removing Selected Cell Types",
+        show=False,
+        save=removed_umap_file
+    )
+    # shrink cluster numbers (on data)
+    for txt in plt.gca().texts:
+        txt.set_fontsize(6)
+    plt.draw()
+    plt.close()
+
+    # ----------------------------
     # Reclustering (use existing log counts)
     # ----------------------------
     print("Reclustering...")
@@ -48,7 +68,7 @@ def main():
     )
 
     # ----------------------------
-    # Original UMAP (only smaller cluster number font)
+    # Reclustered UMAP
     # ----------------------------
     sc.pl.umap(
         adata,
@@ -58,15 +78,13 @@ def main():
         show=False,
         save=f"_{out_base}_UMAP_recluster.png"
     )
-
-    # shrink cluster numbers (on data)
     for txt in plt.gca().texts:
         txt.set_fontsize(6)
     plt.draw()
     plt.close()
 
     # ----------------------------
-    # Original QC violin (only smaller X-axis tick font)
+    # QC violin
     # ----------------------------
     qc_vars = ["n_genes", "n_counts", "percent_mito"]
 
@@ -80,8 +98,6 @@ def main():
         show=False,
         save=f"_{out_base}_QC_violin_by_cluster.png"
     )
-
-    # shrink X-axis tick numbers
     for ax in plt.gcf().axes:
         ax.tick_params(axis='x', labelsize=8)
     plt.draw()
@@ -95,6 +111,7 @@ def main():
 
     print("DONE.")
     print(f"Figures:")
+    print(f" {removed_umap_file}")
     print(f" _{out_base}_UMAP_recluster.png")
     print(f" _{out_base}_QC_violin_by_cluster.png")
 

@@ -7,6 +7,7 @@ rule all:
         f"{config['output_prefix']}_doubletDetected{config['DOUBLET_THRESHOLD']}.h5ad",
         f"{config['output_prefix']}_doubletRemoved{config['DOUBLET_THRESHOLD']}_{config['DOUBLET_SCORE']}.h5ad",
         f"{config['output_prefix']}_annotated.h5ad",
+	f"{config['output_prefix']}_reClustered.h5ad", 
 
 rule read_matrices:
     input:
