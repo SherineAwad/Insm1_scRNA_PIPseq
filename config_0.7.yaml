@@ -1,0 +1,7 @@
+samples: samples_EGFP.tsv
+output_prefix: mInsm1
+resolution: 1.0
+MARKERS: markers.txt
+ANNOTATIONS: annotations.txt
+DOUBLET_THRESHOLD: 0.7
+DOUBLET_SCORE: 0.5

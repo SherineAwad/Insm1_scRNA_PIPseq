@@ -39,11 +39,19 @@ def main():
     # Create figures directory if it doesn't exist
     os.makedirs('figures', exist_ok=True)
     
-    # Set colors: blue for doublets (1), grey for singlets (0)
-    classified_adata.obs['doublet_category'] = classified_adata.obs['predicted_doublet'].map({
-        0: 'Singlet',
-        1: 'Doublet'
-    })
+    # FIX: Convert float to int for proper mapping
+    # Create doublet_category column with proper mapping for FLOAT values
+    classified_adata.obs['doublet_category'] = classified_adata.obs['predicted_doublet'].apply(
+        lambda x: 'Doublet' if float(x) == 1.0 else 'Singlet'
+    )
+    
+    # Verify the mapping worked
+    doublet_count = (classified_adata.obs['doublet_category'] == 'Doublet').sum()
+    singlet_count = (classified_adata.obs['doublet_category'] == 'Singlet').sum()
+    
+    print(f"\nVerification:")
+    print(f"  Doublet cells: {doublet_count}")
+    print(f"  Singlet cells: {singlet_count}")
     
     # Set color palette
     color_dict = {
@@ -55,31 +63,29 @@ def main():
     plt.figure(figsize=(8, 6))
     
     # Plot UMAP
-    sc.pl.umap(
+    ax = sc.pl.umap(
         classified_adata,
         color='doublet_category',
         palette=color_dict,
         size=20,
-        title=f'Doublet Detection - {base_name}\n(Showing {classified_adata.shape[0]}/{adata.shape[0]} classified cells)',
+        title=f'{base_name}\nDoublets: {doublet_count} ({doublet_count/len(classified_adata)*100:.1f}%)',
         frameon=False,
         show=False,
-        legend_loc='right margin'
+        legend_loc='right margin',
+        return_fig=False
     )
     
     # Save figure
     output_file = f"figures/{base_name}_doublets_umap.png"
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     print(f"\nUMAP plot saved to: {output_file}")
+    plt.close()
     
     # Print statistics
-    doublet_count = (classified_adata.obs['predicted_doublet'] == 1).sum()
-    singlet_count = (classified_adata.obs['predicted_doublet'] == 0).sum()
-    total_classified = len(classified_adata)
-    
-    print(f"\nDoublet Statistics (classified cells only):")
-    print(f"  Classified cells: {total_classified}")
-    print(f"  Singlets: {singlet_count} ({singlet_count/total_classified*100:.1f}%)")
-    print(f"  Doublets: {doublet_count} ({doublet_count/total_classified*100:.1f}%)")
+    print(f"\nDoublet Statistics:")
+    print(f"  Total classified cells: {len(classified_adata)}")
+    print(f"  Singlets: {singlet_count} ({singlet_count/len(classified_adata)*100:.1f}%)")
+    print(f"  Doublets: {doublet_count} ({doublet_count/len(classified_adata)*100:.1f}%)")
     print(f"Done.")
 
 if __name__ == '__main__':
