@@ -8,6 +8,7 @@ rule all:
         f"{config['output_prefix']}_doubletRemoved{config['DOUBLET_THRESHOLD']}_{config['DOUBLET_SCORE']}.h5ad",
         f"{config['output_prefix']}_annotated.h5ad",
 	f"{config['output_prefix']}_reClustered.h5ad", 
+        "figures/umap_mInsm1_reClustered_by_sample.png"
 
 rule read_matrices:
     input:

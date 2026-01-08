@@ -238,11 +238,63 @@ We removed:
 
 ![reClustered](figures/umap_mInsm1_reClustered_UMAP_recluster.png?v=1) 
 
-
+![reClustered by Sample](figures/umap_mInsm1_reClustered_by_sample.png?v=1)
 
 ### Checking QC 
 
 ![QC](figures/violin_mInsm1_reClustered_QC_violin_by_cluster.png?v=1)
+
+### Marker genes 
+<img src="figures/umap_mInsm1_reClustered_Abca8a.png?v=2" alt="Abca8a" width="33%"><img src="figures/umap_mInsm1_reClustered_Csf1r.png?v=2" alt="Csf1r" width="33%"><img src="figures/umap_mInsm1_reClustered_Hes5.png?v=2" alt="Hes5" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Neurod4.png?v=2" alt="Neurod4" width="33%"><img src="figures/umap_mInsm1_reClustered_Pou4f2.png?v=2" alt="Pou4f2" width="33%"><img src="figures/umap_mInsm1_reClustered_Slc17a7.png?v=2" alt="Slc17a7" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Acta2.png?v=2" alt="Acta2" width="33%"><img src="figures/umap_mInsm1_reClustered_Cx3cr1.png?v=2" alt="Cx3cr1" width="33%"><img src="figures/umap_mInsm1_reClustered_Hes6.png?v=2" alt="Hes6" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Neurog2.png?v=2" alt="Neurog2" width="33%"><img src="figures/umap_mInsm1_reClustered_Pou4f3.png?v=2" alt="Pou4f3" width="33%"><img src="figures/umap_mInsm1_reClustered_Slc18a3.png?v=2" alt="Slc18a3" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Apoe.png?v=2" alt="Apoe" width="33%"><img src="figures/umap_mInsm1_reClustered_Ebf3.png?v=2" alt="Ebf3" width="33%"><img src="figures/umap_mInsm1_reClustered_Igf2.png?v=2" alt="Igf2" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Notch1.png?v=2" alt="Notch1" width="33%"><img src="figures/umap_mInsm1_reClustered_Prdm1.png?v=2" alt="Prdm1" width="33%"><img src="figures/umap_mInsm1_reClustered_Slc1a3.png?v=2" alt="Slc1a3" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Aqp4.png?v=2" alt="Aqp4" width="33%"><img src="figures/umap_mInsm1_reClustered_EGFP.png?v=2" alt="EGFP" width="33%"><img src="figures/umap_mInsm1_reClustered_Insm1.png?v=2" alt="Insm1" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Nrl.png?v=2" alt="Nrl" width="33%"><img src="figures/umap_mInsm1_reClustered_Prdx6.png?v=2" alt="Prdx6" width="33%"><img src="figures/umap_mInsm1_reClustered_Slc6a9.png?v=2" alt="Slc6a9" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Arr3.png?v=2" alt="Arr3" width="33%"><img src="figures/umap_mInsm1_reClustered_Elavl3.png?v=2" alt="Elavl3" width="33%"><img src="figures/umap_mInsm1_reClustered_Isl1.png?v=2" alt="Isl1" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Olig2.png?v=2" alt="Olig2" width="33%"><img src="figures/umap_mInsm1_reClustered_Prkca.png?v=2" alt="Prkca" width="33%"><img src="figures/umap_mInsm1_reClustered_Sncg.png?v=2" alt="Sncg" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Ascl1.png?v=2" alt="Ascl1" width="33%"><img src="figures/umap_mInsm1_reClustered_Elavl4.png?v=2" alt="Elavl4" width="33%"><img src="figures/umap_mInsm1_reClustered_Isl2.png?v=2" alt="Isl2" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Onecut1.png?v=2" alt="Onecut1" width="33%"><img src="figures/umap_mInsm1_reClustered_Prox1.png?v=2" alt="Prox1" width="33%"><img src="figures/umap_mInsm1_reClustered_Sox11.png?v=2" alt="Sox11" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Atoh7.png?v=2" alt="Atoh7" width="33%"><img src="figures/umap_mInsm1_reClustered_Emx1.png?v=2" alt="Emx1" width="33%"><img src="figures/umap_mInsm1_reClustered_Kcnj8.png?v=2" alt="Kcnj8" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Onecut2.png?v=2" alt="Onecut2" width="33%"><img src="figures/umap_mInsm1_reClustered_Ptf1a.png?v=2" alt="Ptf1a" width="33%"><img src="figures/umap_mInsm1_reClustered_Sox2.png?v=2" alt="Sox2" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Bhlhe23.png?v=2" alt="Bhlhe23" width="33%"><img src="figures/umap_mInsm1_reClustered_Fgf15.png?v=2" alt="Fgf15" width="33%"><img src="figures/umap_mInsm1_reClustered_Lhx1.png?v=2" alt="Lhx1" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Opn1mw.png?v=2" alt="Opn1mw" width="33%"><img src="figures/umap_mInsm1_reClustered_Ptprc.png?v=2" alt="Ptprc" width="33%"><img src="figures/umap_mInsm1_reClustered_Sox9.png?v=2" alt="Sox9" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Bsn.png?v=2" alt="Bsn" width="33%"><img src="figures/umap_mInsm1_reClustered_Foxn4.png?v=2" alt="Foxn4" width="33%"><img src="figures/umap_mInsm1_reClustered_Lhx2.png?v=2" alt="Lhx2" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Opn1sw.png?v=2" alt="Opn1sw" width="33%"><img src="figures/umap_mInsm1_reClustered_Rbfox3.png?v=2" alt="Rbfox3" width="33%"><img src="figures/umap_mInsm1_reClustered_Tfap2a.png?v=2" alt="Tfap2a" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Gad1.png?v=2" alt="Gad1" width="33%"><img src="figures/umap_mInsm1_reClustered_Lhx4.png?v=2" alt="Lhx4" width="33%"><img src="figures/umap_mInsm1_reClustered_Otx2.png?v=2" alt="Otx2" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Rbpms.png?v=2" alt="Rbpms" width="33%"><img src="figures/umap_mInsm1_reClustered_Thy1.png?v=2" alt="Thy1" width="33%"><img src="figures/umap_mInsm1_reClustered_Cabp5.png?v=2" alt="Cabp5" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Gad2.png?v=2" alt="Gad2" width="33%"><img src="figures/umap_mInsm1_reClustered_Malat1.png?v=2" alt="Malat1" width="33%"><img src="figures/umap_mInsm1_reClustered_Pax2.png?v=2" alt="Pax2" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Rho.png?v=2" alt="Rho" width="33%"><img src="figures/umap_mInsm1_reClustered_Tie1.png?v=2" alt="Tie1" width="33%"><img src="figures/umap_mInsm1_reClustered_Calb1.png?v=2" alt="Calb1" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Gfap.png?v=2" alt="Gfap" width="33%"><img src="figures/umap_mInsm1_reClustered_Mki67.png?v=2" alt="Mki67" width="33%"><img src="figures/umap_mInsm1_reClustered_Pax6.png?v=2" alt="Pax6" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Rlbp1.png?v=2" alt="Rlbp1" width="33%"><img src="figures/umap_mInsm1_reClustered_Top2a.png?v=2" alt="Top2a" width="33%"><img src="figures/umap_mInsm1_reClustered_Calb2.png?v=2" alt="Calb2" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Gli1.png?v=2" alt="Gli1" width="33%"><img src="figures/umap_mInsm1_reClustered_mt-Atp6.png?v=2" alt="mt-Atp6" width="33%"><img src="figures/umap_mInsm1_reClustered_Pcna.png?v=2" alt="Pcna" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Rpe65.png?v=2" alt="Rpe65" width="33%"><img src="figures/umap_mInsm1_reClustered_Trpm1.png?v=2" alt="Trpm1" width="33%"><img src="figures/umap_mInsm1_reClustered_Cbln4.png?v=2" alt="Cbln4" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Glul.png?v=2" alt="Glul" width="33%"><img src="figures/umap_mInsm1_reClustered_Nefl.png?v=2" alt="Nefl" width="33%"><img src="figures/umap_mInsm1_reClustered_Pcp4.png?v=2" alt="Pcp4" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Sall1.png?v=2" alt="Sall1" width="33%"><img src="figures/umap_mInsm1_reClustered_UMAP_recluster.png?v=2" alt="UMAP_recluster" width="33%"><img src="figures/umap_mInsm1_reClustered_Ccr2.png?v=2" alt="Ccr2" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Gnat2.png?v=2" alt="Gnat2" width="33%"><img src="figures/umap_mInsm1_reClustered_Nefm.png?v=2" alt="Nefm" width="33%"><img src="figures/umap_mInsm1_reClustered_Pdgfra.png?v=2" alt="Pdgfra" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Sall3.png?v=2" alt="Sall3" width="33%"><img src="figures/umap_mInsm1_reClustered_Vim.png?v=2" alt="Vim" width="33%"><img src="figures/umap_mInsm1_reClustered_Cdk1.png?v=2" alt="Cdk1" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Grm6.png?v=2" alt="Grm6" width="33%"><img src="figures/umap_mInsm1_reClustered_Neurod1.png?v=2" alt="Neurod1" width="33%"><img src="figures/umap_mInsm1_reClustered_Pecam1.png?v=2" alt="Pecam1" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Sebox.png?v=2" alt="Sebox" width="33%"><img src="figures/umap_mInsm1_reClustered_Vsx1.png?v=2" alt="Vsx1" width="33%"><img src="figures/umap_mInsm1_reClustered_Chat.png?v=2" alt="Chat" width="33%">
+
+<img src="figures/umap_mInsm1_reClustered_Hes1.png?v=2" alt="Hes1" width="33%"><img src="figures/umap_mInsm1_reClustered_Neurod2.png?v=2" alt="Neurod2" width="33%"><img src="figures/umap_mInsm1_reClustered_Pou4f1.png?v=2" alt="Pou4f1" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Sfrp2.png?v=2" alt="Sfrp2" width="33%">
 
 
 
