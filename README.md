@@ -285,7 +285,7 @@ We removed:
 <img src="figures/umap_mInsm1_reClustered_Rpe65.png?v=2" alt="Rpe65" width="33%"><img src="figures/umap_mInsm1_reClustered_Trpm1.png?v=2" alt="Trpm1" width="33%"><img src="figures/umap_mInsm1_reClustered_Cbln4.png?v=2" alt="Cbln4" width="33%">
 
 <img src="figures/umap_mInsm1_reClustered_Glul.png?v=2" alt="Glul" width="33%"><img src="figures/umap_mInsm1_reClustered_Nefl.png?v=2" alt="Nefl" width="33%"><img src="figures/umap_mInsm1_reClustered_Pcp4.png?v=2" alt="Pcp4" width="33%">
-<img src="figures/umap_mInsm1_reClustered_Sall1.png?v=2" alt="Sall1" width="33%"><img src="figures/umap_mInsm1_reClustered_UMAP_recluster.png?v=2" alt="UMAP_recluster" width="33%"><img src="figures/umap_mInsm1_reClustered_Ccr2.png?v=2" alt="Ccr2" width="33%">
+<img src="figures/umap_mInsm1_reClustered_Sall1.png?v=2" alt="Sall1" width="33%"><img src="figures/umap_mInsm1_reClustered_Sfrp2.png?v=2" alt="Sfrp2" width="33%"><img src="figures/umap_mInsm1_reClustered_Ccr2.png?v=2" alt="Ccr2" width="33%">
 
 <img src="figures/umap_mInsm1_reClustered_Gnat2.png?v=2" alt="Gnat2" width="33%"><img src="figures/umap_mInsm1_reClustered_Nefm.png?v=2" alt="Nefm" width="33%"><img src="figures/umap_mInsm1_reClustered_Pdgfra.png?v=2" alt="Pdgfra" width="33%">
 <img src="figures/umap_mInsm1_reClustered_Sall3.png?v=2" alt="Sall3" width="33%"><img src="figures/umap_mInsm1_reClustered_Vim.png?v=2" alt="Vim" width="33%"><img src="figures/umap_mInsm1_reClustered_Cdk1.png?v=2" alt="Cdk1" width="33%">
@@ -294,7 +294,6 @@ We removed:
 <img src="figures/umap_mInsm1_reClustered_Sebox.png?v=2" alt="Sebox" width="33%"><img src="figures/umap_mInsm1_reClustered_Vsx1.png?v=2" alt="Vsx1" width="33%"><img src="figures/umap_mInsm1_reClustered_Chat.png?v=2" alt="Chat" width="33%">
 
 <img src="figures/umap_mInsm1_reClustered_Hes1.png?v=2" alt="Hes1" width="33%"><img src="figures/umap_mInsm1_reClustered_Neurod2.png?v=2" alt="Neurod2" width="33%"><img src="figures/umap_mInsm1_reClustered_Pou4f1.png?v=2" alt="Pou4f1" width="33%">
-<img src="figures/umap_mInsm1_reClustered_Sfrp2.png?v=2" alt="Sfrp2" width="33%">
 
 
 
