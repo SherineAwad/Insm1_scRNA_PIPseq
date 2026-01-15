@@ -163,13 +163,17 @@ Basically:
 
 ### Trying different doublets thresholds 
 
-| Threshold | Total Classified Cells | Singlets | Singlets (%) | Doublets | Doublets (%) |
-|-----------|----------------------|----------|--------------|----------|--------------|
-| 0.7       | 57,607               | 53,918   | 93.6%        | 3,689    | 6.4%         |
-| 0.8       | 57,607               | 54,114   | 93.9%        | 3,493    | 6.1%         |
-| 0.9       | 57,611               | 54,697   | 94.9%        | 2,914    | 5.1%         |
+| Threshold | Singlets (%) | Doublets (%) |
+|-----------|--------------|--------------|
+| 0.5       | 92.4%        | 7.6%         |
+| 0.6       | 92.5%        | 7.5%         |
+| 0.7       | 93.6%        | 6.4%         |
+| 0.8       | 93.9%        | 6.1%         |
+| 0.9       | 94.9%        | 5.1%         |
 
 
+<img src="figures/mInsm1_doubletDetected0.5_doublets_umap.png?v=1" alt="P5" width ="75%">
+<img src="figures/mInsm1_doubletDetected0.6_doublets_umap.png?v=1" alt="P6" width ="75%">
 <img src="figures/mInsm1_doubletDetected0.7_doublets_umap.png?v=1" alt="P7" width ="75%"> 
 <img src="figures/mInsm1_doubletDetected0.8_doublets_umap.png?v=1" alt="P8" width ="75%">
 <img src="figures/mInsm1_doubletDetected0.9_doublets_umap.png?v=1" alt="P9" width ="75%">
