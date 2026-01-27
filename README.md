@@ -301,4 +301,10 @@ We removed:
 
 
 
+### Annotations after reClustering as a guide 
+
+
+![legend](figures/umap_mInsm1_reannotated_annotations.png?v=2) 
+
+![ON](figures/umap_mInsm1_reannotated_annotationsON.png?v=2)
 
