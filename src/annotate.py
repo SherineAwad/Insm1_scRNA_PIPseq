@@ -11,6 +11,7 @@ parser = argparse.ArgumentParser(description="Annotate clusters and plot UMAP")
 parser.add_argument("--input", required=True, help="Input .h5ad file")
 parser.add_argument("--output", required=True, help="Output .h5ad file")
 parser.add_argument("--annotations", required=True, help="annotations.txt (cluster<Comma>label)")
+parser.add_argument("--cluster_column", default="leiden", help="Column in adata.obs to use as cluster labels (default: leiden)")
 args = parser.parse_args()
 
 # ------------------------
@@ -32,7 +33,7 @@ ann = pd.read_csv(
 
 # Map cluster -> label
 cluster_to_label = dict(zip(ann["cluster"], ann["label"]))
-adata.obs["annotation"] = adata.obs["leiden"].map(cluster_to_label)
+adata.obs["annotation"] = adata.obs[args.cluster_column].map(cluster_to_label)
 
 print("Annotations applied")
 
